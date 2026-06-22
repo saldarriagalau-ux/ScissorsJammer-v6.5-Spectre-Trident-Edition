@@ -48,21 +48,22 @@ Diseñado para calzar de forma plana, simétrica y con cunas de canto vertical d
 
 ---
 *Desarrollado con orgullo por la comunidad Maker y de Software Libre.* 🏆🛰️💥 --- stl pronto en thingsverse --- desarrollo
----
+
 
 ## 📸 Bitácora Visual del Laboratorio
 
 ### 🛠️ Estado del Cableado en Protoboard
-![Estructura del Cableado](https://githubusercontent.com)
+![Estructura del Cableado](CABLEADO.jpeg)
 
 ### 🔋 Placas Calzadas en Postes de Chasis
-![Montaje de Placas](https://githubusercontent.com)
+![Montaje de Placas](PLACASENBOX.jpeg)
 
 ### ⚡ Primer Encendido y Verificación Lógica
-![Equipo Funcionando](https://githubusercontent.com)
+![Equipo Funcionando](FUNCIONANDO.jpeg)
 
 ### 📐 Ensamble Mecánico Final
-![Gabinete Terminado](https://githubusercontent.com)
+![Gabinete Terminado](ARMADOFINAL.jpeg)
+
 
 
 
