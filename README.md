@@ -68,6 +68,17 @@ Diseñado para calzar de forma plana, simétrica y con cunas de canto vertical d
 Si este firmware unificado te sirvió para tus auditorías o te ahorró horas en el banco de pruebas, ¡puedes invitarme un café de forma anónima para bancar los insumos del taller!
 [![Invitame un café en cafecito.app](https://cdn.cafecito.app/imgs/buttons/button_1.svg)](https://cafecito.app/scissor)
 
+# Descargo de Responsabilidad (Disclaimer)
+
+El uso del software, hardware, esquemas y la información contenida en este repositorio se realiza **bajo su propia cuenta y riesgo**. El proyecto se proporciona "tal cual", sin garantías de ningún tipo.
+
+### Puntos clave:
+1. **Uso Legal:** El usuario es responsable de cumplir con todas las leyes y regulaciones locales, nacionales e internacionales aplicables al uso y operación de equipos de radiofrecuencia.
+2. **Interferencia:** Los dispositivos modificados o construidos basados en este proyecto pueden emitir señales que causen interferencias perjudiciales a otros servicios de radio autorizados.
+3. **Daños al equipo:** El mal uso de los componentes, voltajes incorrectos o configuraciones erróneas pueden dañar permanentemente su hardware y equipos periféricos.
+4. **Sin responsabilidad:** El autor o autores de este proyecto no se hacen responsables de ningún daño, lesión, multa, pérdida de datos o problemas legales derivados directa o indirectamente del uso de este material.
+
+
 
 
 
