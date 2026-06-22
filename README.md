@@ -74,7 +74,7 @@ El uso del software, hardware, esquemas y la información contenida en este repo
 
 ### Puntos clave:
 1. **Uso Legal:** El usuario es responsable de cumplir con todas las leyes y regulaciones locales, nacionales e internacionales aplicables al uso y operación de equipos de radiofrecuencia.
-2. **Interferencia:** Los dispositivos modificados o construidos basados en este proyecto pueden emitir señales que causen interferencias perjudiciales a otros servicios de radio autorizados.
+2. **Interferencia:** Los dispositivos modificados o construidos basados en este proyecto podrian emitir señales que causen interferencias perjudiciales a otros servicios de radio autorizados aunque su potencia es limitada por su diseño de hw hobbista su uso debe limitarse a entornos controlados y de laboratorio, testing.
 3. **Daños al equipo:** El mal uso de los componentes, voltajes incorrectos o configuraciones erróneas pueden dañar permanentemente su hardware y equipos periféricos.
 4. **Sin responsabilidad:** El autor o autores de este proyecto no se hacen responsables de ningún daño, lesión, multa, pérdida de datos o problemas legales derivados directa o indirectamente del uso de este material.
 
