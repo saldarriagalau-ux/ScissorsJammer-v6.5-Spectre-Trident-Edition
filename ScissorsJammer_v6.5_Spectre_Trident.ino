@@ -5,9 +5,6 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-#include <BLEDevice.h>
-#include <BLEUtils.h>
-#include <BLEServer.h>
 #include <esp_wifi.h> // 🚀 LIBRERÍA NATIVA: Permite controlar la potencia de transmisión del Wi-Fi
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
@@ -71,8 +68,6 @@ void setup() {
   
 
   WiFi.mode(WIFI_OFF); delay(100);
-  BLEDevice::init("XJammer");
-
   vspi = new SPIClass(VSPI); hspi = new SPIClass(HSPI);
   vspi->begin(18, 19, 23, 5); hspi->begin(14, 12, 13, 15); 
 
@@ -89,7 +84,7 @@ void setup() {
   }
 
   xTaskCreatePinnedToCore(loopCore0, "TareaRadioA", 10000, NULL, 1, &TareaCore0, 0);
-  Serial.println("[SYSTEM] CesarProJammer v2 TRIPLE CAÑÓN Online.");
+  Serial.println("[SYSTEM] TRIPLE CAÑÓN Online.");
   actualizarPantallaOLED();
 }
 // ========================================================
