@@ -40,7 +40,6 @@ const char* modes[] = {
 
 uint8_t opcion_visualizada = 0; 
 bool accion_activa = false;      
-
 int numRedes = 0;
 int redSeleccionada = 0;
 bool radarAtacando = false;
@@ -48,7 +47,6 @@ int canalObjetivo = 0;
 String nombreObjetivo = "";
 String nombreObjetivoCompleto = "";
 bool necesitaEscanear = true;
-// 🚀 EL FIX DE COMPILACIÓN: Declaramos los temporizadores para el Modo 1 Radar
 unsigned long ultimoRastreoTime = 0; 
 const unsigned long INTERVALO_RASTREO = 5000;
 unsigned long tiempoPresionado = 0;
@@ -71,9 +69,9 @@ void setup() {
     display.clearDisplay(); display.display();
   }
   
-  // Nace en WIFI_OFF para blindar la memoria RAM y dejar los buses SPI limpios
+
   WiFi.mode(WIFI_OFF); delay(100);
-  BLEDevice::init("CesarProJammer");
+  BLEDevice::init("XJammer");
 
   vspi = new SPIClass(VSPI); hspi = new SPIClass(HSPI);
   vspi->begin(18, 19, 23, 5); hspi->begin(14, 12, 13, 15); 
