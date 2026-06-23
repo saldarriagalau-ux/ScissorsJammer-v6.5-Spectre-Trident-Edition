@@ -22,7 +22,7 @@ El soplete electromagnético definitivo. Activa el **Core 0** a 240 MHz constant
 ## 🔌 Conexión de Hardware Indestructible
 
 El diseño utiliza una solución de **Sincronismo Electromecánico Invertido** mediante un interruptor industrial de doble cámara independiente:
-1. **Lado NO (Lógica):** Conecta el pin `GPIO 16` directo a masa (`GND`) usando la resistencia `INPUT_PULLUP` nativa del ESP32. ¡Cero componentes externos en la protoboard!
+1. **Lado NO (Lógica):** Conecta el pin `GPIO 16` directo a masa (`GND`) usando la resistencia `INPUT_PULLUP` nativa del ESP32. 
 2. **Lado NC (Potencia):** Corta físicamente la línea viva de `+3.3V` hacia las radios, disipando la estática, vaciando capacitores y enfriando el silicio en caliente.
 
 ### 📌 Tabla de Pines (Pinout Consecutivo Protegido)
@@ -40,15 +40,33 @@ El diseño utiliza una solución de **Sincronismo Electromecánico Invertido** m
 
 ---
 
+## 🛠️ Lista de Materiales (Bill of Materials - BOM)
+Para replicar con éxito el hardware del **ScissorsJammer v6.5**:
+
+ +🧠 Microcontrolador y Pantalla
+* **1x ESP32 DevKit V1 (30 Pines):** 
+* **1x Pantalla OLED 0.96" I2C (SSD1306):** 
++📡 Etapa de Radiofrecuencia (Dual nRF24)
+* **2x Módulos Transceptores nRF24L01+ (Versión con Antena Externa SMA):** 
++🔌 Control Eléctrico e Interfaz
+* **1x Pulsador Push NC/NO Doble Cámara Mecánica:**
+  * *Cámara NO (Normal Abierto):* Control lógico de estados.
+  * *Cámara NC (Normal Cerrado):* a +3.3V` de las radios nrf24.
+
+
+### 📐 Chasis y Ensamble
+* **Filamento PLA / PETG Premium (Color Naranja/Negro Táctico):** 
+* **Cables Dupont Hembra-Hembra / Pines Rígidos:** Para un conexionado interno.
+
+---
+
 ## 🛠️ Telemetría y Salud de Silicio
 El sistema lee el sensor térmico interno del procesador y estampa la lectura fija en la esquina del display OLED (**`53C`** estables en reposo). Si el chip junta fiebre por el asedio pesado del Triple Cañón, el firmware activa de forma automática una alerta intermitente que grita **`!HOT!`** en pantalla para preservar los transistores.
 
 ## 📐 Chasis Portátil
-Diseñado para calzar de forma plana, simétrica y con cunas de canto vertical dentro de un gabinete ergonómico tipo gamepad impreso en PLA/PETG por la **Artillery Genius**. Energizado de forma autónoma con una celda de litio 18650 de alta descarga.
+Diseñado para calzar de forma plana, simétrica y con cunas de canto vertical dentro de un gabinete ergonómico tipo gamepad impreso en PLA/PETG por la **Artillery Genius**. Energizado de forma autónoma con una celda de litio 18650.
 
 ---
-*Desarrollado con orgullo por la comunidad Maker y de Software Libre.* 🏆🛰️💥 --- stl pronto en thingsverse --- desarrollo
-
 
 ## 📸 Bitácora Visual del Laboratorio
 
@@ -64,6 +82,8 @@ Diseñado para calzar de forma plana, simétrica y con cunas de canto vertical d
 ### 📐 Ensamble Mecánico Final
 ![Gabinete Terminado](https://github.com/saldarriagalau-ux/ScissorsJammer-v6.5-Spectre-Trident-Edition/blob/main/ARMADOFINAL.jpeg)
 
+---
+
 # ☕ Apoya el Desarrollo del Proyecto
 Si este firmware unificado te sirvió para tus auditorías o te ahorró horas en el banco de pruebas, ¡puedes invitarme un café de forma anónima para bancar los insumos del taller!
 [![Invitame un café en cafecito.app](https://cdn.cafecito.app/imgs/buttons/button_1.svg)](https://cafecito.app/scissor)
@@ -72,7 +92,7 @@ Si este firmware unificado te sirvió para tus auditorías o te ahorró horas en
 
 El uso del software, hardware, esquemas y la información contenida en este repositorio se realiza **bajo su propia cuenta y riesgo**. El proyecto se proporciona "tal cual", sin garantías de ningún tipo.
 
-### Puntos clave:
+# Puntos clave:
 1. **Uso Legal:** El usuario es responsable de cumplir con todas las leyes y regulaciones locales, nacionales e internacionales aplicables al uso y operación de equipos de radiofrecuencia.
 2. **Interferencia:** Los dispositivos modificados o construidos basados en este proyecto podrian emitir señales que causen interferencias perjudiciales a otros servicios de radio autorizados aunque su potencia es limitada por su diseño de hw hobbista su uso debe limitarse a entornos controlados y de laboratorio, testing.
 3. **Daños al equipo:** El mal uso de los componentes, voltajes incorrectos o configuraciones erróneas pueden dañar permanentemente su hardware y equipos periféricos.
